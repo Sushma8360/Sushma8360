@@ -52,8 +52,7 @@ echo "SUSHMA"
 }
 }
 }
-
-post{
+post {
 always{
 echo "ALWAYS"
 cleanWS()
