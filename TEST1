@@ -13,9 +13,15 @@ stages{
 
 stage('A'){
 steps{
-echo "$TEST"
-
-echo "${params.NAME}"
+script{
+if('${params.NAME}'=='PROD')
+{
+echo "PROD ENV"
+else{
+echo "TEST ENV"
+}
+}
+}
 }
 }
 stage('B')
