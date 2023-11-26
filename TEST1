@@ -1,6 +1,8 @@
 pipeline{
 agent any
 stages{
+stage('TEST ALL"){
+parallel{
 stage('A'){
 steps{
 echo "SUSHMA"
@@ -13,6 +15,6 @@ echo "GIRISH"
 }
 }
 }
-
-
+}
+}
 }
