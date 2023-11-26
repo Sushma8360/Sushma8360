@@ -1,0 +1,57 @@
+pipeline{
+agent any
+
+//environment{
+//TEST="$GIT_BRANCH"
+
+//}
+
+stages{
+
+stage('BUILD'){
+when{
+expression{
+"$GIT_BRANCH"=~"main"
+}
+}
+steps{
+
+sh '''
+echo " BUILD STAGE IS IN MAIN BRANCH"
+ls -lrt
+'''
+
+}
+}
+stage('TEST'){
+when{
+expression{
+"$GIT_BRANCH"=~"main"
+
+}
+}
+steps{
+
+sh '''
+echo " TEST STAGE IS IN MAIN BRANCH"
+ls -a
+'''
+
+}
+}
+stage('DEPLOY'){
+when{
+expression{
+"$GIT_BRANCH"=~"main"
+}
+}
+steps{
+
+sh '''
+echo " DEPLOY STAGE IS IN MAIN BRANCH"
+'''
+
+}
+}
+}
+}
