@@ -52,6 +52,7 @@ echo "SUSHMA"
 }
 }
 }
+}
 post {
 always{
 echo "ALWAYS"
@@ -68,7 +69,7 @@ echo "ABORTED"
 }
 changed{
 echo "CHANGED"
-}
+
 }
 }
 }
