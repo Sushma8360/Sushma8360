@@ -1,13 +1,21 @@
 pipeline{
 agent any
+parameters {
+  string defaultValue: 'PROD', name: 'NAME'
+}
+
+
 environment{
 TEST="This is TESTING"
 }
+
 stages{
 
 stage('A'){
 steps{
 echo "$TEST"
+
+echo "params.name"
 }
 }
 stage('B')
