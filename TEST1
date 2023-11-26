@@ -1,4 +1,4 @@
-boolean TestResult==true
+boolean testResult=True
 pipeline{
 agent any
 parameters {
@@ -23,7 +23,7 @@ sh 'exit 1'
 }catch(Exception e)
 {
 echo "PROD ENV FAILED"
-TestResult==False
+testResult=False
 
 }
 }
@@ -38,7 +38,7 @@ TEST1="THIS IS MANUAL"
 steps{
 script
 {
-if(TestResult==true)
+if(testResult==true)
 {
 echo "$TEST1"
 }
