@@ -1,8 +1,10 @@
 pipeline{
 agent any
+environment{
+TEST="This is TESTING"
+}
 stages{
-stage('TEST ALL'){
-parallel{
+
 stage('A'){
 steps{
 echo "SUSHMA"
@@ -11,9 +13,8 @@ echo "SUSHMA"
 stage('B')
 {
 steps{
-echo "GIRISH"
-}
-}
+echo "$TEST"
+
 }
 }
 }
