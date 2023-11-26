@@ -1,4 +1,4 @@
-boolean testResult=True
+boolean testResult=true
 pipeline{
 agent any
 parameters {
@@ -24,7 +24,7 @@ sh 'exit 1'
 }catch(Exception e)
 {
 echo "PROD ENV FAILED"
-testResult=False
+testResult=false
 
 }
 }
