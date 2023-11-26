@@ -21,17 +21,10 @@ sh exit 1
 }
 }
 }
-}
 
 stage('B')
 {
-when{
-expression{
 
-params.NAME=="TEST"
-
-}
-}
 environment{
 TEST1="THIS IS MANUAL"
 }
@@ -44,4 +37,4 @@ echo "$TEST1"
 }
 }
 }
-}
+
