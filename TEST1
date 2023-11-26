@@ -5,7 +5,7 @@ parameters {
 }
 
 options{
-timeouts(time:5,unit:'SECONDS')
+timeout(time:5,unit:'SECONDS')
 }
 environment{
 TEST="This is TESTING"
