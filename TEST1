@@ -4,7 +4,9 @@ parameters {
   string defaultValue: 'PROD', name: 'NAME'
 }
 
-
+options{
+timeouts(time:5,unit:'SECONDS')
+}
 environment{
 TEST="This is TESTING"
 }
@@ -14,10 +16,10 @@ stages{
 stage('A'){
 
 steps{
-catchError(buildResult:'SUCCESS', stageResult:'UNSTABLE'){
+
 echo "PROD ENV"
-sh 'exit 1'
-}
+
+
 }
 }
 
