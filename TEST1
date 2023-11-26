@@ -4,7 +4,7 @@ agent any
 parameters {
   string defaultValue: 'PROD', name: 'NAME'
 }
-//triggers { cron('* * * * *') }
+triggers { cron('* * * * *') }
 
 environment{
 TEST="This is TESTING"
@@ -51,6 +51,7 @@ echo "SUSHMA"
 }
 }
 }
+cleanWs()
 }
 }
 post {
