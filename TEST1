@@ -7,13 +7,16 @@ stages{
 
 stage('A'){
 steps{
-echo "SUSHMA"
+echo "$TEST"
 }
 }
 stage('B')
 {
+environment{
+TETS1="THIS IS MANUAL"
+}
 steps{
-echo "$TEST"
+echo "$TEST1"
 
 }
 }
