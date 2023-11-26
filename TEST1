@@ -57,13 +57,13 @@ cleanWs()
 post {
 always{
 echo "ALWAYS"
-//CleanWS()
+
 }
 success{
 echo "SUCCESS"
 }
 failure{
-scho "FAILURE"
+echo "FAILURE"
 }
 aborted{
 echo "ABORTED"
@@ -72,6 +72,6 @@ changed{
 echo "CHANGED"
 
 }
-//cleanWs()
+
 }
 }
