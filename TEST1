@@ -33,7 +33,7 @@ TEST1="THIS IS MANUAL"
 steps{
 echo "$TEST1"
 
-
+sh 'sleep 6'
 }
 }
 }
