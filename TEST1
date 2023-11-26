@@ -56,7 +56,7 @@ echo "SUSHMA"
 post {
 always{
 echo "ALWAYS"
-CleanWS()
+//CleanWS()
 }
 success{
 echo "SUCCESS"
@@ -71,5 +71,6 @@ changed{
 echo "CHANGED"
 
 }
+cleanWs()
 }
 }
