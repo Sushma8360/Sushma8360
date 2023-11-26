@@ -16,7 +16,7 @@ stage('A'){
 steps{
 catchError(buildResult:'SUCCESS', stageResult:'FAILURE'){
 echo "PROD ENV"
-sh exit 1
+sh 'exit 1'
 }
 }
 }
