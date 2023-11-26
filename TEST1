@@ -13,7 +13,7 @@ echo "$TEST"
 stage('B')
 {
 environment{
-TETS1="THIS IS MANUAL"
+TEST1="THIS IS MANUAL"
 }
 steps{
 echo "$TEST1"
