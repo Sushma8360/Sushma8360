@@ -5,15 +5,15 @@ agent any
 //TEST="$GIT_BRANCH"
 
 //}
-
-stages{
-
-stage('BUILD'){
 when{
 expression{
 "$GIT_BRANCH"=~"main"
 }
 }
+stages{
+
+stage('BUILD'){
+
 steps{
 
 sh '''
@@ -24,12 +24,7 @@ ls -lrt
 }
 }
 stage('TEST'){
-when{
-expression{
-"$GIT_BRANCH"=~"main"
 
-}
-}
 steps{
 
 sh '''
@@ -40,11 +35,7 @@ ls -a
 }
 }
 stage('DEPLOY'){
-when{
-expression{
-"$GIT_BRANCH"=~"main"
-}
-}
+
 steps{
 
 sh '''
