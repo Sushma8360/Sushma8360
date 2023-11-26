@@ -1,12 +1,11 @@
+boolean Test==true
 pipeline{
 agent any
 parameters {
   string defaultValue: 'PROD', name: 'NAME'
 }
 
-options{
-timeout(time:5,unit:'SECONDS')
-}
+
 environment{
 TEST="This is TESTING"
 }
@@ -16,9 +15,15 @@ stages{
 stage('A'){
 
 steps{
+try{
+
 
 echo "PROD ENV"
-
+sh 'exit 1'
+}catch(Exception e)
+{
+echo "PROD ENV FAILED"
+Test==False
 
 }
 }
@@ -31,9 +36,12 @@ TEST1="THIS IS MANUAL"
 }
 
 steps{
+script
+{
+if(Test==true)
+{
 echo "$TEST1"
-
-sh 'sleep 6'
+}
 }
 }
 }
