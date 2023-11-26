@@ -26,6 +26,7 @@ echo "TEST ENV"
 }
 }
 }
+
 stage('B')
 {
 when{
@@ -34,15 +35,14 @@ expression{
 params.NAME=="TEST"
 
 }
-
-
+}
 environment{
 TEST1="THIS IS MANUAL"
 }
 steps{
 echo "$TEST1"
 
-}
+
 }
 }
 }
