@@ -30,7 +30,7 @@ testResult=false
 }
 }
 }
-}
+
 
 stage('B')
 {
