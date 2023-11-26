@@ -1,4 +1,4 @@
-kkkboolean testResult=true
+boolean testResult=true
 pipeline{
 agent any
 parameters {
