@@ -20,7 +20,7 @@ try{
 
 
 echo "PROD ENV"
-sh 'exit 1'
+//sh 'exit 1'
 }catch(Exception e)
 {
 echo "PROD ENV FAILED"
