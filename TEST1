@@ -52,4 +52,23 @@ echo "SUSHMA"
 }
 }
 }
+post{
+always{
+echo "ALWAYS"
+}
+success{
+echo "SUCCESS"
+}
+failure{
+scho "FAILURE"
+}
+aborted{
+echo "ABORTED"
+}
+changed{
+echo "CHANGED"
+}
+
+}
+
 }
