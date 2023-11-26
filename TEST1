@@ -17,9 +17,10 @@ script{
 if('${params.NAME}'=='PROD')
 {
 echo "PROD ENV"
+}
 else{
 echo "TEST ENV"
-}
+
 }
 
 }}
