@@ -15,7 +15,7 @@ stage('A'){
 steps{
 echo "$TEST"
 
-echo "params.name"
+echo "params.NAME"
 }
 }
 stage('B')
