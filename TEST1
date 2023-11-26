@@ -18,7 +18,8 @@ if('${params.NAME}'=='PROD')
 {
 echo "PROD ENV"
 }
-else{
+else
+{
 echo "TEST ENV"
 
 }
