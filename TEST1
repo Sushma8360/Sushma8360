@@ -1,10 +1,10 @@
-boolean testResult=true
+kkkboolean testResult=true
 pipeline{
 agent any
 parameters {
   string defaultValue: 'PROD', name: 'NAME'
 }
-
+trigpgers{ cron(*****)}
 
 environment{
 TEST="This is TESTING"
