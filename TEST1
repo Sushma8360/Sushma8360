@@ -51,10 +51,11 @@ echo "SUSHMA"
 }
 }
 }
-}
+
 post{
 always{
 echo "ALWAYS"
+cleanWS()
 }
 success{
 echo "SUCCESS"
@@ -69,6 +70,7 @@ changed{
 echo "CHANGED"
 }
 
+}
 }
 
 }
