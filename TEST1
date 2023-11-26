@@ -12,8 +12,9 @@ TEST="This is TESTING"
 stages{
 
 stage('A'){
-catchError(buildresult:'SUCCESS', stageResult:'FAILURE'){
+
 steps{
+catchError(buildresult:'SUCCESS', stageResult:'FAILURE'){
 echo "PROD ENV"
 sh exit 1
 }
